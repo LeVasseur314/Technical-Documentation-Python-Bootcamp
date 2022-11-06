@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation of Python</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='styles.css' />
+  </head>
+  <body>
+    <nav id='navbar'>
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#If-Else_Statements">If-Else Statements</a></li>
+        <li><a class="nav-link" href="#While_Statements">While Statements</a></li>
+      </ul>
+    </nav>
+    <main id='main-doc'>
+      <section class='main-section' id='Hello_World'>
+        <header>Hello World</header>
+        <p>The first program made in any language is always going to be the "Hello World" program and it is actually quite simple to do in python. The only thing needed is to create a print statement that is shown in the code below:</p>
+        <code>print("Hello World")</code>
+        <p>This will create a program that will print the words "Hello World" to the console.</p>
+      </section>
+      <section class='main-section' id='Variables'>
+        <header>Variables</header>
+        <p>Using and creating variables is also very easy in Python. The variables do not need to be typed when they are created and will automatically cast into the type of the target information they are trying to save.</p>
+        <code>x = 314
+          y = 'pi'
+          print(x)
+          print(y)
+        </code>
+        <p>Inside of these data structures information can be stored and used in other contexts, like the print function that was used in the section above.</p>
+      </section>
+      <section class='main-section' id='Data_Types'>
+        <header>Data Types</header>
+        <p>There are many different data types that can be stored in variables in python. Here are the most common ones:</p>
+        <ul>
+          <li>Boolean: a data type that is either true or false, and no other information is stored in it</li>
+          <li>Integer: this is a number that does not have any decimals or fractions in it, any number with a decimal cast to this data type will lose the decimal portion of the number</li>
+          <li>Floating Point (float): This is a number that has fractions or decimals in it and can have much more accuracy with mathematical computations than the integer can</li>
+          <li>Character: this is a data type that can store a single unicode character in it such as 'a' or '9'. This can store any kind of character, even special ones like symbols and punctuation or newline characters. The difference between uppercase and lowercase characters is preserved in this data type</li>
+          <li>String: This is essentially a list of characters all strung together to make a new data type that holds text in it. It is able to hold the same kinds of information a character can, but with more information</li>
+        </ul>
+        <p>Casting variables to these data types is done below</p>
+        <code>x = str("Hello")  # x will be "Hello"
+y = int(3)        # y will be 3
+z = float(3)      # z will be 3.0
+a = bool(True)    # a will be True
+b = char('e')     # b will be 'e'
+</code>
+      </section>
+      <section class='main-section' id='If-Else_Statements'>
+        <header>If-Else Statements</header>
+        <p>An if-else statement is used to judge wether a line of code should be run or not. This is done using a conditional or boolean inside the if statement. If this conditional or boolean is true it will run the code. If it is false, it will move on to any elif statements and then finally to an else statement if none of the ifs or elifs are true.</p>
+        <p>The conditionals can be performed using special characters like '<' for less than, '>' for greater than, and '==' for equal to. For performing equal to operations, two equal signs must be used to differentiate from the casting operator.</p>
+        <code>a = 200
+b = 33
+if b > a:
+print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")</code>
+      </section>
+      <section class='main-section' id='While_Statements'>
+        <header>While Statements</header>
+        <p>While statements are much like if-else statements where they run code based off of a conditional statement or boolean. The difference is that once the code in a while statement is finished it will loop back to the start and run it again if the condition is still true, and will continue to do so until the statement becomes false.</p>
+        
+        <code>i = 1
+while i < 6:
+  print(i)
+  i += 1</code>
+        <p>This code shown above will print out the numbers 1-5 and then stop, not printing 6 as it is not less than 6. </p>
+      </section>
+    </main>
+  </body>
+</html>
